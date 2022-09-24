@@ -1,0 +1,70 @@
+{
+  // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
+  // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
+  // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Launch App",
+      "request": "launch",
+      "mainClass": "de.cirrus.musim.App",
+      "projectName": "mu01-sim"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "de.cirrus.musim.Main",
+      "projectName": "mu01-sim"
+    },
+    {
+      "type": "java",
+      "name": "Launch ChoosePathFilesDialog",
+      "request": "launch",
+      "mainClass": "de.cirrus.musim.gui.ChoosePathFilesDialog",
+      "projectName": "mu01-sim"
+    },
+    {
+      "type": "java",
+      "name": "Launch DebugWindow",
+      "request": "launch",
+      "mainClass": "de.cirrus.musim.gui.DebugWindow",
+      "projectName": "mu01-sim"
+    },
+    {
+      "type": "java",
+      "name": "Launch ExecutionLog",
+      "request": "launch",
+      "mainClass": "de.cirrus.musim.gui.ExecutionLog",
+      "projectName": "mu01-sim"
+    },
+    {
+      "type": "java",
+      "name": "Launch Information",
+      "request": "launch",
+      "mainClass": "de.cirrus.musim.gui.Information",
+      "projectName": "mu01-sim"
+    },
+    {
+      "type": "java",
+      "name": "Launch License",
+      "request": "launch",
+      "mainClass": "de.cirrus.musim.gui.License",
+      "projectName": "mu01-sim"
+    },
+    {
+      "type": "java",
+      "name": "Launch MainScreen",
+      "request": "launch",
+      "mainClass": "de.cirrus.musim.gui.MainScreen",
+      "projectName": "mu01-sim"
+    }
+  ]
+}
