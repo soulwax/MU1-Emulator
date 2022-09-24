@@ -61,8 +61,10 @@ public class Simulator extends Container {
 
    public void setup() throws ParserConfigurationException, SAXException, IOException {
       try {
-         File f = new File("res/font/Terminus.ttf");
-         InputStream is = new FileInputStream(f);
+         // File f = new File("res/font/Terminus.ttf");
+         // Get Terminus.tff from maven resource folder
+         InputStream is = Simulator.class.getResourceAsStream("/font/Terminus.ttf");
+         // InputStream is = new FileInputStream(f);
          Font font = Font.createFont(0, is);
          font = font.deriveFont(16.0F);
          this.setFont(font);
