@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="mu01-sim:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/mu01_sim_jar</output-path>
+    <root id="archive" name="mu01-sim.jar">
+      <element id="module-output" name="mu01-sim" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/java/dev/swing-layout/swing-layout/1.0.2/swing-layout-1.0.2.jar" path-in-jar="/" />
+      <element id="library" level="project" name="Maven: net.java.dev.swing-layout:swing-layout:1.0.2" />
+    </root>
+  </artifact>
+</component>

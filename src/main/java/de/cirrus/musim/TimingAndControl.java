@@ -232,14 +232,14 @@ public class TimingAndControl {
    }
 
    public AbstractTableModel generateInstuctionTable() {
-      Map<ArchitectureObjectWithBusConnection, Integer> architectureObjectWithBusConnectionColumnIndex = new HashMap();
+      Map<ArchitectureObjectWithBusConnection, Integer> architectureObjectWithBusConnectionColumnIndex = new HashMap<ArchitectureObjectWithBusConnection, Integer>();
       SortedMap<Integer, String> columnNamebyIndex = new TreeMap<Integer, String>();
       int lastFreeColumnIndex = 0;
       columnNamebyIndex.put(lastFreeColumnIndex, "Instruction");
       ++lastFreeColumnIndex;
       columnNamebyIndex.put(lastFreeColumnIndex, "Op. code");
       ++lastFreeColumnIndex;
-      Iterator it = this.SceneObjects.iterator();
+      Iterator<ArchtekturObject> it = this.SceneObjects.iterator();
 
       while (it.hasNext()) {
          ArchtekturObject archtekturObject = (ArchtekturObject) it.next();
@@ -250,12 +250,12 @@ public class TimingAndControl {
                architectureObjectWithBusConnectionColumnIndex.put(reg, lastFreeColumnIndex);
                columnNamebyIndex.put(lastFreeColumnIndex, reg.getName() + "_oe");
                ++lastFreeColumnIndex;
-               columnNamebyIndex.put(lastFreeColumnIndex, reg.getName() + "_cs");
+               columnNamebyIndex.put(lastFreeColumnIndex, reg.getName() + "_ie");
                ++lastFreeColumnIndex;
             } else if (archtekturObject instanceof RAM) {
                RAM ram = (RAM) curentArchitectureObjectWithBusConnection;
                architectureObjectWithBusConnectionColumnIndex.put(ram, lastFreeColumnIndex);
-               columnNamebyIndex.put(lastFreeColumnIndex, ram.getName() + "_cs");
+               columnNamebyIndex.put(lastFreeColumnIndex, ram.getName() + "_ie");
                ++lastFreeColumnIndex;
                columnNamebyIndex.put(lastFreeColumnIndex, ram.getName() + "_RnW");
                ++lastFreeColumnIndex;
@@ -275,7 +275,7 @@ public class TimingAndControl {
 
       DefaultTableModel actm = new DefaultTableModel(1, 0);
       actm.setColumnIdentifiers(columnNamebyIndex.values().toArray());
-      Vector EmpryRows = new Vector();
+      Vector<String> EmpryRows = new Vector<String>();
 
       for (int i = 0; i < lastFreeColumnIndex; ++i) {
          EmpryRows.add("");
@@ -291,7 +291,7 @@ public class TimingAndControl {
                return actm;
             }
 
-            instruction = (Instruction) it.next();
+            instruction = (Instruction) it2.next();
             Instructionname = instruction.getName();
          } while (Instructionname.equals("fetch"));
 
