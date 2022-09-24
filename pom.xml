@@ -5,7 +5,7 @@
 
   <groupId>de.cirrus.musim</groupId>
   <artifactId>mu01-sim</artifactId>
-  <version>0.5.0</version>
+  <version>0.6.0</version>
 
   <name>mu01-sim</name>
   <properties>
