@@ -13,14 +13,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 public class Multiplexer implements ArchitectureObjectWithBusConnection {
    private ArchtekturObject.State currentState;
    int base = 20;
    Bus Output = null;
-   Map<Integer, Bus> InputBuses = new HashMap();
+   Map<Integer, Bus> InputBuses = new HashMap<Integer, Bus>();
    Bus SelectedInput = null;
    Point2D Position = new Point2D.Double(100.0, 200.0);
    private String name = "";
@@ -77,9 +76,9 @@ public class Multiplexer implements ArchitectureObjectWithBusConnection {
       p.addPoint(this.base - 1, 0);
       int x = 0;
 
-      for (Iterator it = this.InputBuses.values().iterator(); it.hasNext(); x += this.base) {
-         Bus bus = (Bus) it.next();
-      }
+      // for (Iterator it = this.InputBuses.values().iterator(); it.hasNext(); x += this.base) {
+      //    Bus bus = (Bus) it.next();
+      // }
 
       x = (int) ((double) x * 1.5);
       p.addPoint(x, 0);
@@ -133,21 +132,12 @@ public class Multiplexer implements ArchitectureObjectWithBusConnection {
    }
 
    public Collection<Bus> getInvoldedBuses() {
-      ArrayList<Bus> t = new ArrayList();
-      if (this.Output != null) {
-         t.add(this.Output);
+      ArrayList<Bus> buses = new ArrayList<Bus>();
+      if (this.Output == null) return null;
+      for (Bus bus : buses) {
+         buses.add(bus);
       }
-
-      Iterator it = this.InputBuses.values().iterator();
-
-      while (it.hasNext()) {
-         Bus bus = (Bus) it.next();
-         if (bus != null) {
-            t.add(bus);
-         }
-      }
-
-      return t;
+      return buses;
    }
 
    public Point2D getConnectionPoint(Bus b) throws IOException {

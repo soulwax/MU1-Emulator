@@ -67,7 +67,7 @@ public class Information extends JDialog {
       this.jTextField7.setEditable(false);
       this.jTextField7.setText("83");
       this.jTextField3.setEditable(false);
-      this.jTextField3.setText("***REMOVED***");
+      this.jTextField3.setText("Soulwax");
       this.jLabel8.setText("Software");
       this.jTextField5.setEditable(false);
       this.jTextField5.setText("aloko.de");

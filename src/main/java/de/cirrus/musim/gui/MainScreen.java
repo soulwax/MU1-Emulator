@@ -78,7 +78,7 @@ public class MainScreen extends JFrame {
       this.jMenu1 = new JMenu();
       this.seperatorMenu = new JMenu();
       this.setDefaultCloseOperation(3);
-      this.setTitle("Architecture Simulator v0.9 (83) by ***REMOVED***");
+      this.setTitle("Architecture Simulator v0.9 (83) by Soulwax");
       this.jPanel2.setLayout(new GridLayout(1, 0));
       this.jPanel2.add(this.filler1);
       this.microStep.setText("Micro Step");
