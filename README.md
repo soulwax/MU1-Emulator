@@ -375,7 +375,7 @@ The provided code file serves as a crucial component within the codebase archite
              <table>
              <tr>
               <td><b><a href='/src/test/java/de/cirrus/musim/AppTest.java'>AppTest.java</a></b></td>
-              <td>- Verifies the correctness of the App by testing if a specific condition is true<br>- This unit test ensures the expected behavior of the App, contributing to the overall reliability and quality of the codebase architecture.</td>
+              <td>- Verifies the correctness of the Program by testing if a specific condition is true<br>- This unit test ensures the expected behavior of the Program, contributing to the overall reliability and quality of the codebase architecture.</td>
              </tr>
              </table>
             </blockquote>
