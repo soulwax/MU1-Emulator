@@ -1,0 +1,99 @@
+Listing of the project tree:
+.
+|   .gitignore
+|   pom.xml
+|   tree.txt
+|   tree.xt
+|   
++---.idea
+|   |   .gitignore
+|   |   compiler.xml
+|   |   encodings.xml
+|   |   jarRepositories.xml
+|   |   misc.xml
+|   |   vcs.xml
+|   |   
+|   \---artifacts
+|           mu01_sim_jar.xml
+|           
++---.vscode
+|       launch.json
+|       settings.json
+|       
++---resources
+|       mu0-2.architecture.xml
+|       mu0-2.layout.xml
+|       self-modifying-code.architecture.xml
+|       
+\---src
+    +---main
+    |   \---java
+    |       \---de
+    |           \---cirrus
+    |               \---musim
+    |                   |   Alu.java
+    |                   |   App.java
+    |                   |   ArchitectureObjectWithBusConnection.java
+    |                   |   ArchtekturObject.java
+    |                   |   BinaryFunctions.java
+    |                   |   BuildInfo.java
+    |                   |   Bus.java
+    |                   |   BusPath.java
+    |                   |   BusStopOver.java
+    |                   |   Command.java
+    |                   |   CommandException.java
+    |                   |   CommandPerformer.java
+    |                   |   ComponentArchitectureAdapter.java
+    |                   |   CompontentScrollAndNonScrollableArchitectureObjectPartAdapter.java
+    |                   |   DimensionChangedListener.java
+    |                   |   Flag.java
+    |                   |   Instruction.java
+    |                   |   InstructionCondition.java
+    |                   |   InstructionStep.java
+    |                   |   Main.java
+    |                   |   Multiplexer.java
+    |                   |   Orientation.java
+    |                   |   RAM.java
+    |                   |   Register.java
+    |                   |   Scene.java
+    |                   |   ScrollableComponentArchitecureAdapter.java
+    |                   |   ScrollAndNonScrollableArchitectureObjectPart.java
+    |                   |   Simulator.java
+    |                   |   StateUpdateListener.java
+    |                   |   StringPair.java
+    |                   |   TimingAndControl.java
+    |                   |   Virtualline.java
+    |                   |   
+    |                   +---gate
+    |                   |       AndGate.java
+    |                   |       Gate.java
+    |                   |       
+    |                   +---gui
+    |                   |       ChoosePathFilesDialog.java
+    |                   |       DebugWindow.java
+    |                   |       ExecutionLog.java
+    |                   |       Information.java
+    |                   |       License.java
+    |                   |       MainScreen.java
+    |                   |       
+    |                   \---xmlparser
+    |                           architekturparser.java
+    |                           layoutparser.java
+    |                           ParseException.java
+    |                           ParserFunctions.java
+    |                           
+    +---resources
+    |   +---font
+    |   |       COPYING
+    |   |       Terminus.ttf
+    |   |       
+    |   \---META-INF
+    |           MANIFEST.MF
+    |           
+    \---test
+        \---java
+            \---de
+                \---cirrus
+                    \---musim
+                            AppTest.java
+                            
