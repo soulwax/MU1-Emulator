@@ -15,21 +15,21 @@
 
 ## Table of Contents
 
-- [MU01-Sim: MU1 Architecture Simulator](#mu01-sim-mu1-architecture-simulator)
- 	- [Features](#features-1)
- 	- [Getting Started](#getting-started)
-  		- [Prerequisites](#prerequisites)
-  		- [Building the Project](#building-the-project)
-  		- [Running the Simulator](#running-the-simulator)
- 	- [Architecture Configuration](#architecture-configuration)
- 	- [Usage](#usage)
- 	- [Development](#development)
-  		- [Key Classes](#key-classes)
- 	- [License](#license)
- 	- [Contributing](#contributing)
- 	- [Version History](#version-history)
- 	- [Authors](#authors)
- 	- [Acknowledgments](#acknowledgments)
+- [MU1-Sim: MU1 Architecture Simulator](#mu1-sim-mu1-architecture-simulator)
+  - [Features](#features-1)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Building the Project](#building-the-project)
+    - [Running the Simulator](#running-the-simulator)
+  - [Architecture Configuration](#architecture-configuration)
+  - [Usage](#usage)
+  - [Development](#development)
+    - [Key Classes](#key-classes)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Version History](#version-history)
+  - [Authors](#authors)
+  - [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -78,7 +78,7 @@ The **Architecture Simulator** project offers a visual representation of complex
     │   ├── generated-test-sources
     │   ├── maven-archiver
     │   ├── maven-status
-    │   ├── mu01-sim-0.6.0.jar
+    │   ├── MU1-Sim-0.6.0.jar
     │   └── test-classes
     └── tree.txt
 ```
@@ -481,9 +481,9 @@ The provided code file serves as a crucial component within the project architec
 
 ---
 
-# MU01-Sim: MU1 Architecture Simulator
+# MU1-Sim: MU1 Architecture Simulator
 
-MU01-Sim is an educational computer architecture simulator that provides a visual and interactive way to understand the operation of a modified MU1 computer architecture. It allows students and educators to observe the internal workings of a simple computer system, including data flow between components, instruction execution, and memory operations.
+MU1-Sim is an educational computer architecture simulator that provides a visual and interactive way to understand the operation of a modified MU1 computer architecture. It allows students and educators to observe the internal workings of a simple computer system, including data flow between components, instruction execution, and memory operations.
 
 ## Features
 
@@ -521,7 +521,7 @@ MU01-Sim is an educational computer architecture simulator that provides a visua
 
 ```bash
 git clone [repository-url]
-cd mu01-sim
+cd MU1-Sim
 ```
 
 2. Build with Maven:
@@ -535,13 +535,13 @@ mvn clean package
 1. Run the main application:
 
 ```bash
-java -jar target/mu01-sim-0.6.0.jar
+java -jar target/MU1-Sim-0.6.0.jar
 ```
 
 2. For debug mode:
 
 ```bash
-java -jar target/mu01-sim-0.6.0.jar -d
+java -jar target/MU1-Sim-0.6.0.jar -d
 ```
 
 ## Architecture Configuration
